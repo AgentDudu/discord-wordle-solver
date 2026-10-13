@@ -62,9 +62,10 @@ official NYT answer list
 (`wordle-answers-alphabetical.txt`, retrieved 2026-10-13 from
 `raw.githubusercontent.com/taw/100-languages-speedrun/master/episode-88-brat/`).
 
-**Measured staleness.** Sampling 16 recent dates from the NYT endpoint, 1–2 answers fall outside
-this list — `yodel` (2026-10-12) and `aspic` (2026-08-16) are absent. Roughly 6% of current
-answers are new words NYT added after the snapshot was cut.
+**Measured staleness.** Sampling 42 dates across 2024–2026 from the NYT endpoint, 5 answers fall
+outside this list — `spate` (2025-04-21), `tizzy` (2025-07-21), `shill` (2026-07-21),
+`soupy` (2026-09-05), `pager` (2026-09-21). About 12% of current answers are words NYT added after
+the snapshot was cut.
 
 That is not cosmetic: if the true answer is outside the guess pool, the feedback-consistent
 candidate set in §4 can empty out and the sequence stalls before attempt N. So the pool is
